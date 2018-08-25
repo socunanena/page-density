@@ -7,5 +7,5 @@ chrome.runtime.onMessage.addListener(({ density }) => {
 });
 
 chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
-  chrome.tabs.executeScript(tab.id, { file: 'calculateDensity.js' });
+  chrome.tabs.executeScript(tab.id, { file: 'scripts/calculateDensity.js' });
 });
