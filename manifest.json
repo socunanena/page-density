@@ -1,0 +1,12 @@
+{
+  "name": "Page density",
+  "version": "0.0.1",
+  "description": "Calculates the page density of a set of HTML elements",
+  "permissions": ["activeTab", "storage"],
+  "browser_action": {
+    "default_title": "Page density",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
