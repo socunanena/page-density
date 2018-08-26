@@ -10,6 +10,7 @@ function manageInput({ elementName, storageKey, defaultValue }) {
   element.onblur = (event) => {
     const element = event.srcElement;
     const value = element.type === 'number' ? element.valueAsNumber : element.value;
+    // TODO check input data
     chrome.storage.sync.set({ [storageKey]: value });
   };
 }
