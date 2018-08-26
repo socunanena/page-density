@@ -1,6 +1,6 @@
 'use strict';
 
-var querySelectorElement = document.getElementById('query-selector');
+const querySelectorElement = document.getElementById('query-selector');
 
 chrome.storage.sync.get('querySelector', ({ querySelector }) => {
   querySelectorElement.value = querySelector || '';
