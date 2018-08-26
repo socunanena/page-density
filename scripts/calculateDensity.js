@@ -9,7 +9,7 @@ chrome.storage.sync.get(['querySelector'], ({ querySelector }) => {
     return sum + (width * height);
   }, 0);
 
-  var density = ((elementsArea / bodyArea) * 100).toFixed(2);
+  var density = Math.round((elementsArea / bodyArea) * 10000) / 100;
 
   chrome.runtime.sendMessage({ density });
 });
